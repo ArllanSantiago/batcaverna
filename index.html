@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--responsive css-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>BATCAVERNA</title>
+</head>
+
+<body onload="loadingMain()">
+    <header>
+        <div class="container">
+            <h2 class="logo">BATCAVERNA</h2>
+            <nav>
+                <a target="_blank" href="https://www.rataalada.com/" class="nav-item charada">?</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-movie" id="banner-destak">            
+            <div class="vertical-gradient">
+                <div class="horizontal-gradient">
+                    <div class="container">
+                        <P class="title" id="title-destak"></P>
+                        <div id="subtitle-destak"></div>
+                        <p class="sinopse" id="sinopse-destak"></p>
+                        <div class="buttons">
+                            <button role="button" class="button" id="btnPlayer">
+                                <i class="fas fa-play"></i>
+                                ASSISTIR AGORA
+                            </button>
+                            <button role="button" class="button" id="btnInfo">
+                                <i class="fas fa-info-circle"></i>
+                                MAIS INFORMAÇÕES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movie-list">
+            <div class="category">Filmes</div>
+            <div class="owl-carousel owl-theme" id="movie-items">
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(0)">
+                        <img src="img/filmes/the-batman/the-batman-movie.png" width="" alt="the batman">
+                        <div class="movie-title">
+                            The Batman
+                        </div>
+                    </a>
+                </div>
+
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(1)">
+                        <img src="img/filmes/The-Dark-Knight.png" width="" alt="Batman - O Cavaléiro das Trevas">
+                        <div class="movie-title">
+                            O Cavaleiro das Trevas
+                        </div>
+                    </a>
+                </div>
+
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(2)">
+                        <img src="img/filmes/batman-begin.png" width="" alt="Batman Begins">
+                        <div class="movie-title">
+                            Batman Begins
+                        </div>
+                    </a>
+                </div>
+
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(3)">
+                        <img src="img/filmes/batman-vs-superman.png" width="" alt="Batman VS Superman">
+                        <div class="movie-title">
+                            Batman VS Superman
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category">Séries</div>
+            <div class="owl-carousel owl-theme" id="movie-items">
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(0)">
+                        <img src="img/filmes/the-batman/the-batman-movie.png" width="" alt="1">
+                        <div class="movie-title">
+                            The Batman
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="movie">
+                    <a role="button" onclick="setMovieDestak(1)">
+                        <img src="img/filmes/The-Dark-Knight.png" width="" alt="1">
+                        <div class="movie-title">
+                            O Cavaleiro das Trevas
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

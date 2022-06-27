@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--responsive css-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/movie-info.css">
+    <title>BATCAVERNA</title>
+</head>
+
+<body onload="loading()">
+    <header>
+        <div class="container">
+            <h2 class="logo">BATCAVERNA </h2>
+            <nav>
+                <a href="index.html" class="nav-item"><i class="fa fa-arrow-left"></i> Voltar</a>              
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-movie" id="banner-destak"></div>
+        <div class="movie-info">
+            <div class="cast">
+                <div class="header">
+                  <p class="title">ELENCO <i class="fa-duotone fa-caret-down"></i> </p>
+                </div>
+                    <div class="container">
+                        <div class="actors-list">
+                            <ul>                        
+                                <li class="nav-item" onmousedown="getCastActor(0,'batman')">Batman - Robert Pattinson</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'selina')">Selina - Zoë Kravitz</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'ridder')">The Riddler - Paul Dano</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'falcone')">Falcone - John Turturro</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'penguin')">Penguin - Colin Farrell</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'bella')">Bella Real - Jayme Lawson</li>
+                                <li class="nav-item" onmousedown="getCastActor(0,'alfred')">Alfred - Andy Serkis</li>
+                            </ul>
+                        </div>
+                        <div class="actor-info">
+                            <img id='actor-img' src="./img/filmes/batman-begin.png"  alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/fa8c6a0873.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/movie-info.js"></script>
+
+</body>
+
+</html>
